@@ -1,0 +1,17 @@
+.circular {
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	background: url(http://brandon.gupton.info/img/brandon.jpg) no-repeat;
+	}
+
+.footer-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
