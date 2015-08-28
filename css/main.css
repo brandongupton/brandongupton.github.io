@@ -19,3 +19,40 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 }
+
+body {
+  position: relative;
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 800px;
+}
+
+.section-last {
+  padding-bottom: 400px;
+}
+
+.section-single {
+  padding-bottom: 0;
+}
+
+.contact-list li {
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-connect-list li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  .section {
+    padding-bottom: 400px;
+  }
+
+}

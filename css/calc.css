@@ -1,0 +1,17 @@
+.container-calculator {
+  max-width: 400px;
+}
+
+.calc-info h4 {
+  color: gray;
+  margin: 20px 5px 5px 5px;
+}
+.calc-result {
+  border: solid;
+}
+.calc-result h2 {
+  margin: 5px;
+}
+.btn-col {
+  padding: 5px;
+}
