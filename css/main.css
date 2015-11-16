@@ -24,6 +24,10 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .icon {
   padding-right: 10px;
 }
@@ -43,6 +47,65 @@ body {
 
 .contact-list li {
   padding: 5px 10px;
+}
+
+.portfolio-button {
+  text-transform: uppercase;
+    margin-bottom: 20px;
+    height: 107px;
+    display: block;
+    border: 1px #eee solid;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 107px;
+    text-align: center;
+      -moz-transition: all 0.25s ease-in;
+      -o-transition: all 0.25s ease-in;
+      -webkit-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in;
+}
+
+.portfolio-button:hover {
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.chef {
+  color: #F18B21;
+}
+
+.chef:hover {
+  color: #fff;
+  background-color: #F18B21;
+}
+
+.java {
+  color: #E20001;
+}
+
+.java:hover {
+  color: #fff;
+  background-color: #E20001;
+}
+
+.jenkins {
+  color: #335061;
+}
+
+.jenkins:hover {
+  color: #fff;
+  background-color: #335061;
+}
+
+.spring {
+  color: #6DB33F;
+}
+
+.spring:hover {
+  color: #fff;
+  background-color: #6DB33F;
 }
 
 @media only screen and (max-width: 768px) {

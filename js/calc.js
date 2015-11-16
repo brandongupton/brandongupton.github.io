@@ -1,15 +1,50 @@
 $(document).ready(function () {
-	var updateResult = function (input) {
-		var $result = $('#calc-result').text();
-		console.log('input: ' + input + '; result: ' + $result);
-		switch (input) {
+	var bufferedOperator = null;
+
+  var calculateResult = function (valOne, valTwo) {
+		switch (bufferedOperator) {
+			case 'add':
+			  return valOne + valTwo;
+
+			case 'subtract':
+			  return valTwo - valOne;
+
+			case 'multiply':
+			  return valTwo * valOne;
+
+			case 'divide':
+			  return valTwo / valOne;
+		}
+
+		bufferedOperator = null;
+	};
+
+	var updateResult = function (action) {
+		var $input = $('#calc-result').text();
+		var $buffer = $('#calc-buffer').text();
+		var $result = input;
+
+		console.log('action: ' + action + '; input: ' + $input + '; buffer: ' + $buffer);
+		switch (action) {
 			case 'clear':
-				$result = 0;
+			  if (input == 0) {
+					buffer = 0;
+				}
+				else {
+					input = 0;
+				}
 				break;
 
+			case 'add':
+			  if (bufferedOperator != null) {
+					$result = calculateResult(input, buffer);
+				}
+
 			case 'enter':
+			  $result = calculateResult($result, $('#calc-info').text(), bufferedOperator);
 				$('#calc-info').text($result);
 				$result = 0;
+				bufferedOperator = null;
 				break;
 
 			case 0:
