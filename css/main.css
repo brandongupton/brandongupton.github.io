@@ -108,6 +108,15 @@ a {
   background-color: #6DB33F;
 }
 
+.quote-href {
+  color: #337ab7;
+}
+
+.quote-href:hover {
+  color:#fff;
+  background-color: #337ab7;
+}
+
 @media only screen and (max-width: 768px) {
   .intro-connect-list li {
       display: block;

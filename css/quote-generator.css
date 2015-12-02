@@ -1,0 +1,16 @@
+.container-quote-generator {
+  max-width: 600px;
+}
+
+p.author {
+  font-style: italic;
+  font-size: 12pt;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.twitter-share-button {
+  margin-top: 20px;
+}
