@@ -15,7 +15,8 @@ $(document).ready(function() {
         $('#quote').text(response.quote);
         $('#author').text(response.author);
 
-        // Remove existing iframe
+        // Remove existing anchor and iframe
+        $('#tweetBtn a').remove();
         $('#tweetBtn iframe').remove();
         // Generate new markup
         var tweetBtn = $('<a></a>')
